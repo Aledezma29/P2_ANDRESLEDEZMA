@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora Científica Interactiva</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Calculadora Científica Interactiva</h1>
+    <p>Resuelve problemas matemáticos simples</p>
+    
+   
+    <section>
+        <h2>Suma de tres valores constantes</h2>
+        <label>Valores constantes:</label>
+        <input type="number" id="const1" placeholder="Constante 1">
+        <input type="number" id="const2" placeholder="Constante 2">
+        <input type="number" id="const3" placeholder="Constante 3">
+        <button onclick="sumarValores()">Sumar</button>
+        <div id="resultadoSuma"></div>
+    </section>
+
+    <section>
+        <h2>Cuadrado de un número</h2>
+        <label>Número entero:</label>
+        <input type="number" id="numCuadrado" placeholder="Ingrese un número">
+        <button onclick="calcularCuadrado()">Calcular cuadrado</button>
+        <div id="resultadoCuadrado"></div>
+    </section>
+
+    <section>
+        <h2>Promedio de calificaciones</h2>
+        <label>Nombre del estudiante:</label>
+        <input type="text" id="nombreEstudiante" placeholder="Nombre">
+        <br>
+        <label>Calificación 1:</label>
+        <input type="number" id="calif1">
+        <label>Calificación 2:</label>
+        <input type="number" id="calif2">
+        <label>Calificación 3:</label>
+        <input type="number" id="calif3">
+        <button onclick="calcularPromedio()">Calcular promedio</button>
+        <div id="resultadoPromedio"></div>
+    </section>
+
+    <section>
+        <h2>Conversión de metros</h2>
+        <label>Valor en metros:</label>
+        <input type="number" id="metros" placeholder="Metros">
+        <button onclick="convertirMetros()">Convertir</button>
+        <div id="resultadoConversion"></div>
+    </section>
+
+    <section>
+        <h2>Comparación de dos valores</h2>
+        <label>Número 1:</label>
+        <input type="number" id="num1">
+        <label>Número 2:</label>
+        <input type="number" id="num2">
+        <button onclick="compararValores()">Comparar</button>
+        <div id="resultadoComparacion"></div>
+    </section>
+
+    <footer>
+        <p> Andres Ledezma  | Programación Web III (2229)</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
